@@ -1,0 +1,148 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Tweeten</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="navigation">
+            <nav class="navbar navbar-default navbar fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Tweeten</a>
+                    <ul class="nav nav-tabs">
+                        <li style="padding:5px">
+                            <button class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-home"></span> Home
+                            </button>
+                        </li>
+                        <li style="padding:5px">
+                            <button class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-bell"></span> Notifications
+                            </button>
+                        </li>
+                        <li style="padding:5px">
+                            <button class="btn btn-default btn-md">
+                                <span class="glyphicon glyphicon-envelope"></span> Message
+                            </button>
+                        </li>
+                        <form class="navbar-form navbar-right" style="padding:5px">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <button type="button" class="btn btn-default btn-md">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                                <button class="btn btn-tweet btn-primary btn-md pull-right" type="submit" style="padding:5px">
+                                    Tweet
+                                </button>
+                                <img class="img-circle pull-right" src="images/couple.png" alt="me and Jordan" style="width:40px;height:40px; padding:5px">                                
+                            </div>    
+                        </form>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img class="img-circle" src="images/couple.png" alt="me and Jordan" style="width:243px;height:243px;">
+                        <h2>Caitlin Curbow</h2>
+                        <p>@caitlincurbow</p>
+                        <h3>Struggling student at Ozarks Technical Community College.</h3>
+                        <p>"Know your worth.<br>Then add tax."</p>
+                        <span class="glyphicon glyphicon-map-marker"></span> Springfield, MO<br>
+                        <span class="glyphicon glyphicon-calendar"></span> joined March 2015<br>
+                        <span class="glyphicon glyphicon-picture"></span> 72 pictures and videos
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="panel-heading">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    Compose new Tweet
+                                </div>
+                                <div class="panel-body">
+                                    <div class="text-box-comment">
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    </div>
+                                    <div class="text-box-glyphs">
+                                        <button class="btn btn-info">
+                                            <span class="glyphicon glyphicon-picture"></span>
+                                        </button>
+                                        <button class="btn btn-info">
+                                            <span class="glyphicon glyphicon-map-marker"></span>
+                                        </button>
+                                        <button class="btn btn-primary pull-right" type="submit">
+                                            Tweet
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    Tweets &#8226; Tweets & Replies &#8226; Media
+                                </div>
+                                <div class="panel-body">
+                                    <img class="img-circle pull-left" src="images/couple.png" alt="me and Jordan" style="width:75px;height:75px;">
+                                    <h4 style="float:left; line-height:7px">Caitlin Curbow</h4><p style=" color:lightGray; float:left; margin-left:4px">@caitlincurbow &#8226; Sep 27</p>
+                                    <p style="float:left">I've never cried so much over one class... #CSharp #OTC</p>
+                                    <div class="pull-left">
+                                        <span class="glyphicon glyphicon-comment"></span>32
+                                        <span class="glyphicon glyphicon-retweet"></span>1.1k
+                                        <span class="glyphicon glyphicon-heart"></span>50
+                                        <span class="glyphicon glyphicon-envelope"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Your Tweet Activity
+                            </div>
+                            <div class="panel-body">
+                                <div class="text-box-comment">
+                                    You've tweeted once. Don't be too proud of yourself.
+                                    <!-- <textarea class="form-control" rows="5" id="comment"></textarea> -->
+                               </div>
+                                <div class="text-box-glyphs">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Who to Follow
+                            </div>
+                            <div class="list-group">
+                                <li class="list-group-item" style="height:100px">
+                                    <img class="img-circle pull-left" src="images/cierra.jpg" alt="cierras face" style="width:75px;height:75px;"> 
+                                    <p>@cierrastrickland</p><br>
+                                    <button class="btn btn-primary pull-left" style="margin-top:-12px" type="submit">
+                                            Follow
+                                    </button>                                 
+                                </li>
+                                <li class="list-group-item" style="height:100px">
+                                    <img class="img-circle pull-left" src="images/reesewitherspon.jpg" alt="Reese Witherspoon" style="width:75px;height:75px;"> 
+                                    <p>@RWitherspoon</p><br>
+                                    <button class="btn btn-primary pull-left" style="margin-top:-12px" type="submit">
+                                        Follow
+                                    </button>  
+                                </li>
+                                <li class="list-group-item" style="height:100px">
+                                    <img class="img-circle pull-left" src="images/ivoryella.jpg" alt="ivorye ella" style="width:75px;height:75px;"> 
+                                    <p>@shopivoryella</p><br>
+                                    <button class="btn btn-primary pull-left" style="margin-top:-12px" type="submit">
+                                        Follow
+                                    </button>
+                                </li>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>
