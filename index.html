@@ -13,21 +13,9 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Tweeten</a>
                     <ul class="nav nav-tabs">
-                        <li style="padding:5px">
-                            <button class="btn btn-default btn-md">
-                                <span class="glyphicon glyphicon-home"></span> Home
-                            </button>
-                        </li>
-                        <li style="padding:5px">
-                            <button class="btn btn-default btn-md">
-                                <span class="glyphicon glyphicon-bell"></span> Notifications
-                            </button>
-                        </li>
-                        <li style="padding:5px">
-                            <button class="btn btn-default btn-md">
-                                <span class="glyphicon glyphicon-envelope"></span> Message
-                            </button>
-                        </li>
+                        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-bell"></span> notifications</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li>
                         <form class="navbar-form navbar-right" style="padding:5px">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Search">
@@ -88,10 +76,17 @@
                                     <h4 style="float:left; line-height:7px">Caitlin Curbow</h4><p style=" color:lightGray; float:left; margin-left:4px">@caitlincurbow &#8226; Sep 27</p>
                                     <p style="float:left">I've never cried so much over one class... #CSharp #OTC</p>
                                     <div class="pull-left">
-                                        <button class="glyphicon glyphicon-comment"></button>32
-                                        <button class="glyphicon glyphicon-retweet"></button>1.1k
-                                        <button class="glyphicon glyphicon-heart increment"></button>50
-                                        <button class="glyphicon glyphicon-envelope"></button>
+                                        <button type="btn btn-primary" class="likebutton" type="submit" style="background-color:white; border:none">
+                                            <i class="glyphicon glyphicon-comment"></i><div class="like" style="display:inline">8</div></button>
+
+                                        <button type="btn btn-primary" class="likebutton" type="submit" style="background-color:white; border:none">
+                                            <i class="glyphicon glyphicon-retweet"></i><div class="like" style="display:inline">1000</div></button>
+
+                                        <button type="btn btn-primary" class="likebutton" type="submit" style="background-color:white; border:none">
+                                            <i class="glyphicon glyphicon-heart"></i><div class="like" style="display:inline">32</div></button>
+
+                                        <button type="btn btn-primary" class="likebutton" type="submit" style="background-color:white; border:none">
+                                            <i class="glyphicon glyphicon-envelope"></i><div class="like" style="display:inline"></div></button>
                                     </div>
                                 </div>
                             </div>
@@ -144,6 +139,10 @@
                     </div>
                 </div>
         </div>
-        <script src="./increment.js"></script>
+        <!-- <script src="./increment.js"></script> -->
+        <script
+            src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
     </body>
 </html>
