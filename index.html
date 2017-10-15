@@ -50,28 +50,30 @@
                                 <div class="panel-heading">
                                     Compose new Tweet
                                 </div>
-                                <div class="panel-body">
-                                    <div class="text-box-comment">
-                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                <form id="newTweetForm">
+                                    <div class="panel-body">
+                                        <div class="text-box-comment">
+                                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                                        </div>
+                                        <div class="text-box-glyphs">
+                                            <button class="btn btn-info" style="margin:5px; margin-top:7px">
+                                                <span class="glyphicon glyphicon-picture"></span>
+                                            </button>
+                                            <button class="btn btn-info" style="margin:5px; margin-top:7px">
+                                                <span class="glyphicon glyphicon-map-marker"></span>
+                                            </button>
+                                            <button id="submitTweet" class="btn btn-primary pull-right" type="submit" style="margin:5px; margin-top:7px">
+                                                Tweet
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="text-box-glyphs">
-                                        <button class="btn btn-info">
-                                            <span class="glyphicon glyphicon-picture"></span>
-                                        </button>
-                                        <button class="btn btn-info">
-                                            <span class="glyphicon glyphicon-map-marker"></span>
-                                        </button>
-                                        <button class="btn btn-primary pull-right" type="submit">
-                                            Tweet
-                                        </button>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
-                            <div class="panel panel-default">
+                            <div class="panel panel-default" id="tweetList">
                                 <div class="panel-heading">
                                     Tweets &#8226; Tweets & Replies &#8226; Media
                                 </div>
-                                <div class="panel-body">
+                                <div class="panel-body" id="storeTweet">
                                     <img class="img-circle pull-left" src="images/couple.png" alt="me and Jordan" style="width:75px;height:75px;">
                                     <h4 style="float:left; line-height:7px">Caitlin Curbow</h4><p style=" color:lightGray; float:left; margin-left:4px">@caitlincurbow &#8226; Sep 27</p>
                                     <p style="float:left">I've never cried so much over one class... #CSharp #OTC</p>
